@@ -1,0 +1,38 @@
+a) czym jest system kontroli wersji
+Jest to system, który rejestruje zmiany w pliku lub zestawie plików w taki sposób, ¿e mo¿na wróciæ do ich wczeœniejszych stanów
+  
+  b) jak wygl¹da typowy "workflow"
+  Jest to oprogramowanie pozwalaj¹ce na okreœlenie jakie role w przetwarzaniu 
+  dokumentów pe³ni¹ osoby uczestnicz¹ce w wykonywaniu danej czynnoœci 
+  oraz jakie s¹ stany poœrednie dokumentów.Procesy workflow przedstawia siê 
+  zwykle w postaci grafu. 
+  
+  c) czym ró¿ni scentralizowany i rozproszony system kontroli wersji
+  Scentralizowane systemy kontroli wersji sk³adaj¹ siê z jednego 
+  serwera, który zawiera wszystkie pliki poddane kontroli wersji, oraz 
+  klientów którzy mog¹ siê z nim ³¹czyæ i uzyskaæ dostêp do najnowszych 
+  wersji plików, natomiast rozproszony system kontroli wersjii klienci 
+  nie dostaj¹ dostêpu jedynie do najnowszych wersji plików ale w pe³ni 
+  kopiuj¹ ca³e repozytorium. Gdy jeden z serwerów, u¿ywanych przez 
+  te systemy do wspó³pracy, ulegnie awarii, repozytorium ka¿dego klienta 
+  mo¿e zostaæ po prostu skopiowane na ten serwer w celu przywrócenia go 
+  do pracy.
+  
+  d) wyt³umacz do czego s³u¿¹ polecenia: 
+
+    init - tworzenie nowego podkatalogu o nazwie .git, zawieraj¹ce wszystkie niezbêdny pliki-szkielet repozytorium Gita
+    clone - tworzenie klonu istniej¹cego ju¿ repozytorium Gita
+    add - s³u¿y do œledzenia plikó, umieszczania ich w poczekalni, oraz innych zadañ, takich jak oznaczanie rozwi¹zanych konfliktów scalania
+    status - sprawdzanie stanu plików
+    diff - podgl¹d zmian w poczekalni i poza ni¹
+    commit - pozwala zatwierdziæ zmiany bêd¹ce w poczekalni
+    reset - resetuje zmiany w repozytorium
+    rm - usuwanie plików z Gita
+    mv - s³u¿y do zmiany nazw plików w repozytorium
+    branch - tworzy ga³¹Ÿ
+    checkout - przejœcie do innej galêzi b¹dŸ taga
+    merge - scala ga³êzie 
+    log - pozawala sprawdziæ wprowadzone zmiany
+    stash - pozwala na odsuniêcie wprowadzonych zmian projektu bez koniecznoœci comminowania ich
+    pull - pobiera pliki ze zdalnego repozytorium i automatycznie wykonuje merge
+    push - wysyla lokalne tagi do zdalnego repozytorium
